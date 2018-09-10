@@ -16,6 +16,7 @@ end
 def word_substituter(tweet)
   array = tweet.join(" ")
   
-  
+  dictionry.each do |word|
+    array.map!
   
   
