@@ -14,9 +14,14 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  array = tweet.join(" ")
+  array = tweet.split(" ")
   
-  dictionry.each do |word|
-    array.map!
+  dictionry.each do |short|
+    array.map! do |word| 
+      word == short ? dictionary[short] : word
+    end
+  end
+  array.join(" ")
+end
   
   
