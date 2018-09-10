@@ -45,7 +45,9 @@ end
     
     tweet_length = word_substituter(tweet)
     
-    if tweet_length.length 
+    if tweet_length.length > 140
+      
+      
       
       
       
