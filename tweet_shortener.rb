@@ -13,7 +13,7 @@ def dictionary
     }
 end
 
-def word_substituter(tweet_one)
+def word_substituter(tweet)
   
   
   
