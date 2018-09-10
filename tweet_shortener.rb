@@ -38,5 +38,19 @@ end
     
   else
     tweet
+    end
   end
-  end
+  
+  def shortened_tweet_truncator(tweet)
+    
+    tweet_length = word_substituter(tweet)
+    
+    if tweet_length.length 
+      
+      
+      
+      
+      
+      
+      
+  
