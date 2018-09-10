@@ -16,7 +16,7 @@ end
 def word_substituter(tweet)
   array = tweet.split(" ")
   
-  dictionry.each do |short|
+  dictionary.keys do |short|
     array.map! do |word| 
       word == short ? dictionary[short] : word
     end
