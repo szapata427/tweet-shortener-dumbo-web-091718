@@ -18,7 +18,7 @@ def word_substituter(tweet)
   
   dictionary.keys do |short|
     array.map! do |word| 
-      word == short ? dictionary[short] : word
+      word.downcase == short ? dictionary[short] : word
     end
   end
   array.join(" ")
