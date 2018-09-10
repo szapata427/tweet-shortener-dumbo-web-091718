@@ -13,21 +13,15 @@ def dictionary
     }
 end
 
-# def word_substituter(tweet)
-#   array = tweet.split(" ")
+def word_substituter(tweet)
+  array = tweet.split(" ")
   
-#   dictionary.keys do |short|
-#     array.map! do |word| 
-#       word.downcase == short ? dictionary[short] : word
-#     end
-#   end
-#   array.join(" ")
-# end
-  
-  def word_substituter(tweet)
-  tweet_arr = tweet.split(" ")
-  dictionary.keys.each do |i|
-    tweet_arr.map! { |x| x.downcase == i ? dictionary[i] : x }
+  dictionary.keys.each do |short|
+    array.map! do |word| 
+      word.downcase == short ? dictionary[short] : word
+    end
   end
-  tweet_arr.join(" ")
+  array.join(" ")
 end
+  
+  
